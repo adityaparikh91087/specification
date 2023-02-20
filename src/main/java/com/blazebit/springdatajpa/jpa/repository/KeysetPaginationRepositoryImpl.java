@@ -30,6 +30,7 @@ public class KeysetPaginationRepositoryImpl<T> implements KeysetPaginationReposi
         return sortedCriteriaBuilder(specification, sortBy, entityClass)
                 .page(0, pageSize)
                 .withKeysetExtraction(true)
+                .withExtractAllKeysets(true)
                 .getResultList();
     }
 
@@ -44,6 +45,8 @@ public class KeysetPaginationRepositoryImpl<T> implements KeysetPaginationReposi
                         previousPage.getPage() * previousPage.getMaxResults(),
                         previousPage.getMaxResults()
                 )
+                .withKeysetExtraction(true)
+                .withExtractAllKeysets(true)
                 .getResultList();
     }
 
