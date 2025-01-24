@@ -36,7 +36,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-        <version.blaze-persistence>1.6.8</version.blaze-persistence>
+        <version.blaze-persistence>1.6.14</version.blaze-persistence>
     </properties>
 
     <dependencyManagement>
